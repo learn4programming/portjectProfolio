@@ -17,7 +17,6 @@ h6 {
 
 body {
   position: relative;
-
   overflow: scroll;
   scrollbar-color: $themeColor;
   scrollbar-width: thin;
@@ -86,7 +85,7 @@ body {
       // 設定背景圖片
       min-height: 70vh;
       background-image: url("../images/日本櫻花.jpg");
-      background-size: cover;
+      background-size: contain;
       background-position: center;
       transition: all 0.75s ease;
       position: relative;
@@ -98,7 +97,7 @@ body {
 
       div.filter {
         background-color: rgba(0, 0, 0, 0.5);
-        width: 100%;
+        width: 50%;
         min-height: 70vh;
         position: absolute;
         top: 0;
