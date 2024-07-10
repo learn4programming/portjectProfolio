@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "微軟正黑體", "思源黑體", Roboto, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: normal;
+}
+
+.app {
+  min-height: 100vh;
+  display: grid;
+  background: lightblue;
+}
