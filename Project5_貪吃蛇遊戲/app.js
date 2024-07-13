@@ -97,12 +97,28 @@ function changeDiration(e) {
   } else if (e.key == "ArrowRight" && d != "Left") {
     d = "Right";
   }
+  console.log(d);
+
+  // 建立按鈕方向鍵使用
+  document.querySelectorAll(".btnDir");
 
   // 每次按下方向鍵後，在下一幀被畫出來之前
   // 不接受任何keydown事件
   // 可以防止連續按鍵導致蛇快速變向而死亡
   window.removeEventListener("keydown", changeDiration);
 }
+document
+  .querySelector(".arrowUp")
+  .addEventListener("click", () => changeDiration({ key: "ArrowUp" }));
+document
+  .querySelector(".arrowDown")
+  .addEventListener("click", () => changeDiration({ key: "ArrowDown" }));
+document
+  .querySelector(".arrowLeft")
+  .addEventListener("click", () => changeDiration({ key: "ArrowLeft" }));
+document
+  .querySelector(".arrowRight")
+  .addEventListener("click", () => changeDiration({ key: "ArrowRight" }));
 
 // 分數設定
 // 讀取最高紀錄
@@ -121,7 +137,7 @@ function draw() {
     if (snake[i].x == snake[0].x && snake[i].y == snake[0].y) {
       clearInterval(myGame);
       alert("遊戲結束");
-      return;
+      return location.reload();
     }
   }
 

@@ -7,14 +7,6 @@
     <link rel="stylesheet" href="../Project5_貪吃蛇遊戲/styles/style.css" />
   </head>
   <body>
-    <!-- 遊戲畫面規格 -->
-    <canvas
-      id="myCanvas"
-      width="320"
-      height="320"
-      style="background-color: black"
-    ></canvas>
-
     <!-- 分數介面 -->
     <div class="score">
       <p id="myScore"></p>
@@ -25,7 +17,21 @@
     <button type="button" id="Start" onclick="location.reload()">
       開始新遊戲
     </button>
+    <!-- 遊戲畫面規格 -->
+    <canvas
+      id="myCanvas"
+      width="320"
+      height="320"
+      style="background-color: black"
+    ></canvas>
+    <button class="arrowUp btnDir">🔼</button>
 
+    <div class="arrowDir btnDir">
+      <button class="arrowLeft btnDir">◀️</button>
+      <button class="arrowRight btnDir">▶️</button>
+    </div>
+
+    <button class="arrowDown btnDir">🔽</button>
     <script src="./app.js"></script>
   </body>
 </html>
