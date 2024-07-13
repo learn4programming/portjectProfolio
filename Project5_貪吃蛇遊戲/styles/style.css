@@ -16,11 +16,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-#myScore {
-  margin-top: 3rem;
+  transform: translate(-50%, -70%);
 }
 
 #myScore,
@@ -30,9 +26,15 @@ body {
 }
 
 #Start {
+  top: 80%;
   margin: 1rem;
   padding: 0.25rem 0.5rem;
   background-color: yellow;
   font-size: 1.15rem;
-  display: block;
+}
+
+@media screen and (max-width: 380px) {
+  #start {
+    position: none;
+  }
 }/*# sourceMappingURL=style.css.map */

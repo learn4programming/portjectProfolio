@@ -72,7 +72,7 @@ body header nav ul li a:hover {
 body main section.background-img {
   min-height: 70vh;
   background-image: url("../images/日本櫻花.jpg");
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   transition: all 0.75s ease;
   position: relative;
@@ -83,7 +83,7 @@ body main section.background-img {
 }
 body main section.background-img div.filter {
   background-color: rgba(0, 0, 0, 0.5);
-  width: 100%;
+  width: 50%;
   min-height: 70vh;
   position: absolute;
   top: 0;
